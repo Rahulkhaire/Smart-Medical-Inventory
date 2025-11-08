@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATH Agency - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                                <a class="logo" href="index.html">
+                                        <img class="site-logo" src="logo1.png" alt="NATH Agency logo">
+                                        <div>
+                                            <h1>NATH AGENCY CSN</h1>
+                                            <p class="tagline">Your Trusted Partner for Medical Equipment</p>
+                                        </div>
+                                </a>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown"><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search products...">
+                        <button id="search-btn" class="btn btn--secondary">🔍</button>
+                    </div>
+                    <a id="cart-btn" class="btn btn--outline" href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+                    <a id="account-btn" class="btn btn--primary" href="account.html">Account</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="products-page">
+            <div class="container">
+                <div class="page-header">
+                    <h2>Our Products</h2>
+                    <p>Browse our comprehensive collection of medical equipment</p>
+                </div>
+                
+                <div class="products-filters">
+                    <!-- Replace this existing static category filter -->
+                    <div class="filter-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter" class="form-control">
+                        <option value="">All Categories</option>
+                        <!-- Dynamic options inserted here -->
+                    </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="sort-filter">Sort by:</label>
+                        <select id="sort-filter" class="form-control">
+                            <option value="name">Name</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="products-grid" class="products-grid"></div>
+            </div>
+        </section>
+
+        <!-- Product Modal -->
+        <div id="product-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="product-detail">
+                    <div class="product-image">
+                        <img id="modal-product-image" src="" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 id="modal-product-name"></h3>
+                        <p class="price" id="modal-product-price"></p>
+                        <p id="modal-product-description"></p>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button id="add-to-cart-btn" class="btn btn--primary">Add to Cart</button>
+                        </div>
+                        <div class="product-meta">
+                            <p class="stock-status" id="modal-stock-status"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>NATH Agency</h4>
+                    <p>Your trusted partner for premium medical and surgical equipment across India.</p>
+                    <div class="footer-contact">
+                        <p>📞 +91-7385346634</p>
+                        <p>✉️ info@nathagency.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                <h4>Product Categories</h4>
+                <ul id="footer-category-list">
+                    <!-- Dynamic category links inserted here -->
+                </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li>Equipment Installation</li>
+                        <li>Maintenance & Support</li>
+                        <li>Training Programs</li>
+                        <li>Technical Consultation</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NATH Agency. All rights reserved.</p>
+                <div class="footer-certifications">
+                    <span>ISO 13485 Certified</span>
+                    <span>FDA Approved Products</span>
+                    <span>Secure Payments</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

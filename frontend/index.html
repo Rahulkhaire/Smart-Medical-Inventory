@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NATH Agency - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo1.png" type="image/png" />
+
+  <style>
+    /* 🔍 Search suggestions dropdown */
+    .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .search-box input {
+      width: 240px;
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      transition: 0.2s ease;
+    }
+
+    .search-box input:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+    }
+
+    .suggestions-box {
+      position: absolute;
+      top: 105%;
+      left: 0;
+      width: 100%;
+      max-height: 260px;
+      overflow-y: auto;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+    }
+
+    .suggestions-box.hidden {
+      display: none;
+    }
+
+    .suggestion-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      cursor: pointer;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 0.95rem;
+      color: #333;
+      transition: background 0.2s ease;
+    }
+
+    .suggestion-item img {
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+
+    .suggestion-item:hover {
+      background: #f4f8ff;
+      color: #0056b3;
+    }
+
+    .suggestion-empty {
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a class="logo" href="index.html">
+          <img class="site-logo" src="logo1.png" alt="NATH Agency Logo" />
+          <div>
+            <h1>NATH AGENCY CSN</h1>
+            <p class="tagline">Your Trusted Partner for Medical Equipment</p>
+          </div>
+        </a>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search products..." autocomplete="off" />
+            <button id="search-btn" class="btn btn--secondary">🔍</button>
+            <div id="search-suggestions" class="suggestions-box hidden"></div>
+          </div>
+
+          <a id="cart-btn" class="btn btn--outline" href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+          <a id="account-btn" class="btn btn--primary" href="account.html">Account</a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="introvid.mp4" type="video/mp4" />
+        <source src="introvid.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="hero-content container">
+        <h2>Empowering Healthcare Through Innovation</h2>
+        <p>
+          Discover high-quality medical and surgical equipment designed to support healthcare professionals and improve patient outcomes across India.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn--primary btn--lg" href="products.html">Explore Products</a>
+          <a class="btn btn--outline btn--lg" href="contact.html">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT CATEGORIES -->
+    <section class="featured-categories">
+      <div class="container">
+        <h3>Our Product Categories</h3>
+        <div class="categories-track">
+          <div class="category-card" data-category="surgical_instruments">
+            <div class="category-icon">🔪</div>
+            <h4>Surgical Instruments</h4>
+            <p>High-precision tools trusted by surgeons across India.</p>
+            <a href="products.html?category=surgical_instruments" class="btn btn--outline">Explore</a>
+          </div>
+
+          <div class="category-card" data-category="diagnostic_equipment">
+            <div class="category-icon">🩺</div>
+            <h4>Diagnostic Equipment</h4>
+            <p>Accurate and reliable devices for better clinical results.</p>
+            <a href="products.html?category=diagnostic_equipment" class="btn btn--outline">Explore</a>
+          </div>
+
+          <div class="category-card" data-category="patient_care">
+            <div class="category-icon">🏥</div>
+            <h4>Patient Care Equipment</h4>
+            <p>Smart solutions for effective patient monitoring and safety.</p>
+            <a href="products.html?category=patient_care" class="btn btn--outline">Explore</a>
+          </div>
+
+          <div class="category-card" data-category="furniture">
+            <div class="category-icon">🛏️</div>
+            <h4>Hospital Furniture</h4>
+            <p>Ergonomic and durable furniture for modern healthcare setups.</p>
+            <a href="products.html?category=furniture" class="btn btn--outline">Explore</a>
+          </div>
+
+          <div class="category-card" data-category="consumables">
+            <div class="category-icon">🧤</div>
+            <h4>Medical Consumables</h4>
+            <p>Trusted supplies for daily hospital and clinic operations.</p>
+            <a href="products.html?category=consumables" class="btn btn--outline">Explore</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-choose-us">
+      <div class="container">
+        <h3>Why Choose NATH Agency</h3>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">✅</div>
+            <h4>Certified Quality</h4>
+            <p>All products comply with ISO, CE, and FDA standards ensuring top performance and reliability.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🚚</div>
+            <h4>Nationwide Delivery</h4>
+            <p>Efficient logistics and inventory network for fast delivery across India.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🛠️</div>
+            <h4>24/7 Technical Support</h4>
+            <p>Expert engineers provide quick installation, training, and maintenance.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">💰</div>
+            <h4>Competitive Pricing</h4>
+            <p>Affordable solutions with unmatched quality and flexible purchase options.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container">
+        <h3>What Our Clients Say</h3>
+        <div class="testimonials-grid">
+          <div class="testimonial">
+            <p>"NATH Agency consistently delivers top-quality surgical equipment with prompt support — a trusted partner in healthcare."</p>
+            <div class="testimonial-author">
+              <strong>Dr. Rajesh Kumar</strong>
+              <span>Chief Surgeon, Apollo Hospital</span>
+            </div>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+          </div>
+
+          <div class="testimonial">
+            <p>"Their diagnostic devices have transformed our patient care process. Outstanding service and delivery."</p>
+            <div class="testimonial-author">
+              <strong>Dr. Priya Sharma</strong>
+              <span>Cardiologist, Max Healthcare</span>
+            </div>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+          </div>
+
+          <div class="testimonial">
+            <p>"Excellent after-sales support and genuine products. NATH Agency is the best choice for hospitals."</p>
+            <div class="testimonial-author">
+              <strong>Sister Mary Joseph</strong>
+              <span>Head Nurse, St. John’s Medical Center</span>
+            </div>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND HIGHLIGHT -->
+    <section class="brand-highlight">
+      <div class="container">
+        <div class="highlight-grid">
+          <div class="highlight-item">
+            <h4>7+ Years of Experience</h4>
+            <p>Delivering trusted healthcare solutions since 2018.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>500+ Hospitals Served</h4>
+            <p>Across Maharashtra and expanding nationwide.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>ISO 13485 Certified</h4>
+            <p>Committed to international quality standards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>NATH Agency</h4>
+          <p>Delivering quality medical and surgical equipment for better healthcare across India.</p>
+          <div class="footer-contact">
+            <p>📞 +91-9075357337</p>
+            <p>✉️ info@nathagency.com</p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Product Categories</h4>
+          <ul>
+            <li><a href="products.html">Surgical Instruments</a></li>
+            <li><a href="products.html">Diagnostic Equipment</a></li>
+            <li><a href="products.html">Patient Care</a></li>
+            <li><a href="products.html">Hospital Furniture</a></li>
+            <li><a href="products.html">Medical Consumables</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul>
+            <li>Equipment Installation</li>
+            <li>Maintenance & Support</li>
+            <li>Training Programs</li>
+            <li>Technical Consultation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 NATH Agency. All rights reserved.</p>
+        <div class="footer-certifications">
+          <span>ISO 13485 Certified</span>
+          <span>FDA Approved Products</span>
+          <span>Secure Payments</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

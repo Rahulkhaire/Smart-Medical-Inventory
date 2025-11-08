@@ -1,0 +1,322 @@
+{
+  "surgical_instruments": {
+    "name": "Surgical Instruments",
+    "description": "High-quality surgical instruments for various medical procedures",
+    "subcategories": {
+      "cutting_instruments": {
+        "name": "Cutting & Dissecting Instruments",
+        "products": [
+          {
+            "name": "Scalpels",
+            "price_range": "\u20b950-\u20b9500",
+            "description": "Precision cutting instruments for surgical procedures"
+          },
+          {
+            "name": "Mayo Scissors",
+            "price_range": "\u20b9200-\u20b9800",
+            "description": "Heavy scissors for cutting thick tissues"
+          },
+          {
+            "name": "Metzenbaum Scissors",
+            "price_range": "\u20b9300-\u20b91000",
+            "description": "Delicate tissue cutting scissors"
+          },
+          {
+            "name": "Iris Scissors",
+            "price_range": "\u20b9150-\u20b9600",
+            "description": "Fine dissection scissors"
+          },
+          {
+            "name": "Surgical Blades",
+            "price_range": "\u20b910-\u20b950",
+            "description": "Disposable surgical blades"
+          }
+        ]
+      },
+      "grasping_instruments": {
+        "name": "Grasping & Holding Instruments",
+        "products": [
+          {
+            "name": "DeBakey Forceps",
+            "price_range": "\u20b9300-\u20b91200",
+            "description": "Atraumatic tissue grasping forceps"
+          },
+          {
+            "name": "Adson Forceps",
+            "price_range": "\u20b9200-\u20b9800",
+            "description": "Toothed forceps for dense tissue handling"
+          },
+          {
+            "name": "Russian Forceps",
+            "price_range": "\u20b9250-\u20b9900",
+            "description": "Broad-tipped tissue forceps"
+          },
+          {
+            "name": "Bonney Forceps",
+            "price_range": "\u20b9400-\u20b91500",
+            "description": "Heavy forceps for thick tissue"
+          },
+          {
+            "name": "Tissue Forceps",
+            "price_range": "\u20b9150-\u20b9700",
+            "description": "Non-toothed fine handling forceps"
+          }
+        ]
+      },
+      "hemostatic_instruments": {
+        "name": "Hemostatic Instruments",
+        "products": [
+          {
+            "name": "Kelly Clamps",
+            "price_range": "\u20b9300-\u20b91000",
+            "description": "Locking forceps for hemostasis"
+          },
+          {
+            "name": "Crile Hemostats",
+            "price_range": "\u20b9250-\u20b9900",
+            "description": "Atraumatic vessel clamps"
+          },
+          {
+            "name": "Kocher Forceps",
+            "price_range": "\u20b9200-\u20b9800",
+            "description": "Toothed traumatic clamps"
+          },
+          {
+            "name": "Mosquito Forceps",
+            "price_range": "\u20b9150-\u20b9600",
+            "description": "Small hemostatic forceps"
+          }
+        ]
+      },
+      "retractors": {
+        "name": "Retractors",
+        "products": [
+          {
+            "name": "Deaver Retractor",
+            "price_range": "\u20b9400-\u20b91200",
+            "description": "Deep wound retraction"
+          },
+          {
+            "name": "Richardson Retractor",
+            "price_range": "\u20b9350-\u20b91100",
+            "description": "Abdominal retraction"
+          },
+          {
+            "name": "Langenbeck Retractor",
+            "price_range": "\u20b9200-\u20b9800",
+            "description": "L-shaped tissue retractor"
+          },
+          {
+            "name": "Rake Retractor",
+            "price_range": "\u20b9150-\u20b9600",
+            "description": "Sharp-toothed surface retractor"
+          }
+        ]
+      }
+    }
+  },
+  "diagnostic_equipment": {
+    "name": "Diagnostic Equipment",
+    "description": "Modern diagnostic tools for accurate medical assessment",
+    "subcategories": {
+      "cardiovascular": {
+        "name": "Cardiovascular Diagnostics",
+        "products": [
+          {
+            "name": "Digital Stethoscopes",
+            "price_range": "\u20b95000-\u20b925000",
+            "description": "Electronic stethoscopes with amplification"
+          },
+          {
+            "name": "ECG Machines",
+            "price_range": "\u20b915000-\u20b9150000",
+            "description": "Electrocardiography machines"
+          },
+          {
+            "name": "Blood Pressure Monitors",
+            "price_range": "\u20b91000-\u20b98000",
+            "description": "Digital and analog BP monitors"
+          },
+          {
+            "name": "Holter Monitors",
+            "price_range": "\u20b925000-\u20b9100000",
+            "description": "24-hour heart rhythm monitors"
+          }
+        ]
+      },
+      "imaging": {
+        "name": "Medical Imaging",
+        "products": [
+          {
+            "name": "Ultrasound Machines",
+            "price_range": "\u20b9200000-\u20b92000000",
+            "description": "Portable and stationary ultrasound systems"
+          },
+          {
+            "name": "Digital X-Ray Systems",
+            "price_range": "\u20b9500000-\u20b95000000",
+            "description": "Digital radiography equipment"
+          },
+          {
+            "name": "Endoscopes",
+            "price_range": "\u20b950000-\u20b9500000",
+            "description": "Flexible and rigid endoscopes"
+          }
+        ]
+      }
+    }
+  },
+  "patient_care_equipment": {
+    "name": "Patient Care Equipment",
+    "description": "Essential equipment for patient care and monitoring",
+    "subcategories": {
+      "monitoring": {
+        "name": "Patient Monitoring",
+        "products": [
+          {
+            "name": "Pulse Oximeters",
+            "price_range": "\u20b91500-\u20b915000",
+            "description": "Oxygen saturation monitors"
+          },
+          {
+            "name": "Patient Monitors",
+            "price_range": "\u20b950000-\u20b9500000",
+            "description": "Multi-parameter monitoring systems"
+          },
+          {
+            "name": "Thermometers",
+            "price_range": "\u20b9200-\u20b93000",
+            "description": "Digital and infrared thermometers"
+          }
+        ]
+      },
+      "respiratory": {
+        "name": "Respiratory Equipment",
+        "products": [
+          {
+            "name": "Nebulizers",
+            "price_range": "\u20b92000-\u20b915000",
+            "description": "Medication delivery systems"
+          },
+          {
+            "name": "Oxygen Concentrators",
+            "price_range": "\u20b925000-\u20b9100000",
+            "description": "Portable oxygen generators"
+          },
+          {
+            "name": "CPAP Machines",
+            "price_range": "\u20b930000-\u20b9150000",
+            "description": "Sleep apnea treatment devices"
+          }
+        ]
+      }
+    }
+  },
+  "hospital_furniture": {
+    "name": "Hospital Furniture",
+    "description": "Comfortable and functional medical furniture",
+    "subcategories": {
+      "beds": {
+        "name": "Hospital Beds & Accessories",
+        "products": [
+          {
+            "name": "Electric Hospital Beds",
+            "price_range": "\u20b925000-\u20b9150000",
+            "description": "Adjustable electric hospital beds"
+          },
+          {
+            "name": "Manual Hospital Beds",
+            "price_range": "\u20b915000-\u20b975000",
+            "description": "Manual adjustment hospital beds"
+          },
+          {
+            "name": "Bed Mattresses",
+            "price_range": "\u20b93000-\u20b925000",
+            "description": "Medical grade mattresses"
+          },
+          {
+            "name": "Over-bed Tables",
+            "price_range": "\u20b95000-\u20b920000",
+            "description": "Adjustable patient tables"
+          }
+        ]
+      },
+      "chairs": {
+        "name": "Medical Chairs",
+        "products": [
+          {
+            "name": "Examination Chairs",
+            "price_range": "\u20b920000-\u20b9100000",
+            "description": "Adjustable examination chairs"
+          },
+          {
+            "name": "Wheelchairs",
+            "price_range": "\u20b95000-\u20b950000",
+            "description": "Manual and electric wheelchairs"
+          },
+          {
+            "name": "Commode Chairs",
+            "price_range": "\u20b93000-\u20b915000",
+            "description": "Portable toilet chairs"
+          }
+        ]
+      }
+    }
+  },
+  "consumables": {
+    "name": "Medical Consumables",
+    "description": "Disposable medical supplies and consumables",
+    "subcategories": {
+      "wound_care": {
+        "name": "Wound Care Supplies",
+        "products": [
+          {
+            "name": "Surgical Gloves",
+            "price_range": "\u20b9300-\u20b91500",
+            "description": "Sterile and non-sterile examination gloves"
+          },
+          {
+            "name": "Bandages",
+            "price_range": "\u20b950-\u20b9500",
+            "description": "Various types of medical bandages"
+          },
+          {
+            "name": "Gauze Pads",
+            "price_range": "\u20b920-\u20b9200",
+            "description": "Sterile gauze for wound dressing"
+          },
+          {
+            "name": "Surgical Masks",
+            "price_range": "\u20b9200-\u20b91000",
+            "description": "Disposable surgical face masks"
+          }
+        ]
+      },
+      "injection_supplies": {
+        "name": "Injection & IV Supplies",
+        "products": [
+          {
+            "name": "Syringes",
+            "price_range": "\u20b9200-\u20b92000",
+            "description": "Disposable syringes various sizes"
+          },
+          {
+            "name": "Needles",
+            "price_range": "\u20b9100-\u20b91000",
+            "description": "Hypodermic needles"
+          },
+          {
+            "name": "IV Cannulas",
+            "price_range": "\u20b950-\u20b9300",
+            "description": "Intravenous cannulas"
+          },
+          {
+            "name": "IV Bags",
+            "price_range": "\u20b9100-\u20b9500",
+            "description": "Intravenous fluid bags"
+          }
+        ]
+      }
+    }
+  }
+}

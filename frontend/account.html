@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NATH Agency - Account</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- jspdf + autotable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a class="logo" href="index.html">
+          <img class="site-logo" src="logo1.png" alt="NATH Agency logo" />
+          <div>
+            <h1>NATH Agency</h1>
+            <p class="tagline">Your Trusted Partner for Medical Equipment</p>
+          </div>
+        </a>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a id="cart-btn" class="btn btn--outline" href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+          <a id="account-btn" class="btn btn--primary" href="account.html">Account</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="account-page">
+      <div class="container">
+        <div class="page-header">
+          <h2>My Account</h2>
+          <p>Manage your account and orders</p>
+        </div>
+
+        <div id="login-section" class="auth-section">
+          <div class="auth-forms">
+            <div class="auth-form active" id="login-form-container">
+              <h3>Login</h3>
+              <form id="login-form">
+                <div class="form-group">
+                  <label for="login-email" class="form-label">Email</label>
+                  <input type="email" id="login-email" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label for="login-password" class="form-label">Password</label>
+                  <input type="password" id="login-password" class="form-control" required />
+                </div>
+                <button type="submit" class="btn btn--primary btn--full-width">Login</button>
+              </form>
+              <p class="auth-switch">Don't have an account? <a href="#" id="show-register">Register here</a></p>
+            </div>
+
+            <div class="auth-form" id="register-form-container">
+              <h3>Register</h3>
+              <form id="register-form">
+                <div class="form-group">
+                  <label for="register-name" class="form-label">Full Name</label>
+                  <input type="text" id="register-name" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label for="register-email" class="form-label">Email</label>
+                  <input type="email" id="register-email" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label for="register-password" class="form-label">Password</label>
+                  <input type="password" id="register-password" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label for="register-phone" class="form-label">Phone</label>
+                  <input type="tel" id="register-phone" class="form-control" required />
+                </div>
+                <button type="submit" class="btn btn--primary btn--full-width">Register</button>
+              </form>
+              <p class="auth-switch">Already have an account? <a href="#" id="show-login">Login here</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div id="account-dashboard" class="account-dashboard hidden">
+          <div class="dashboard-nav">
+            <button class="dashboard-tab active" data-tab="profile">Profile</button>
+            <button class="dashboard-tab" data-tab="orders">Orders</button>
+            <button id="logout-btn" class="btn btn--outline">Logout</button>
+          </div>
+
+          <div class="dashboard-content">
+            <div class="dashboard-section active" id="profile-section">
+              <h3>Profile Information</h3>
+              <div id="user-profile"></div>
+            </div>
+
+            <div class="dashboard-section" id="orders-section">
+              <h3>Order History</h3>
+              <div id="user-orders">
+                <p>No orders found.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>NATH Agency</h4>
+          <p>Your trusted partner for premium medical and surgical equipment across India.</p>
+          <div class="footer-contact">
+            <p>📞 +91-9075357337</p>
+            <p>✉️ info@nathagency.com</p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Product Categories</h4>
+          <ul>
+            <li><a href="products.html" data-category="surgical_instruments">Surgical Instruments</a></li>
+            <li><a href="products.html" data-category="diagnostic_equipment">Diagnostic Equipment</a></li>
+            <li><a href="products.html" data-category="patient_care">Patient Care Equipment</a></li>
+            <li><a href="products.html" data-category="furniture">Hospital Furniture</a></li>
+            <li><a href="products.html" data-category="consumables">Medical Consumables</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul>
+            <li>Equipment Installation</li>
+            <li>Maintenance & Support</li>
+            <li>Training Programs</li>
+            <li>Technical Consultation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 NATH Agency. All rights reserved.</p>
+        <div class="footer-certifications">
+          <span>ISO 13485 Certified</span>
+          <span>FDA Approved Products</span>
+          <span>Secure Payments</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/account.js"></script>
+</body>
+</html>

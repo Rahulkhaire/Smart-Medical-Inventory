@@ -1,0 +1,44 @@
+
+{
+	"surgical_instruments": {
+		"name": "Surgical Instruments",
+		"description": "High-quality surgical instruments for various medical procedures",
+		"subcategories": {
+			"cutting_instruments": {
+				"name": "Cutting & Dissecting Instruments",
+				"products": [
+					{ "name": "Scalpels", "price_range": "₹50-₹500", "description": "Precision cutting instruments for surgical procedures" },
+					{ "name": "Mayo Scissors", "price_range": "₹200-₹800", "description": "Heavy scissors for cutting thick tissues" },
+					{ "name": "Metzenbaum Scissors", "price_range": "₹300-₹1000", "description": "Delicate tissue cutting scissors" },
+					{ "name": "Iris Scissors", "price_range": "₹150-₹600", "description": "Fine dissection scissors" },
+					{ "name": "Surgical Blades", "price_range": "₹10-₹50", "description": "Disposable surgical blades" }
+				]
+			},
+			"grasping_instruments": {
+				"name": "Grasping & Holding Instruments",
+				"products": [
+					{ "name": "DeBakey Forceps", "price_range": "₹300-₹1200", "description": "Atraumatic tissue grasping forceps" },
+					{ "name": "Adson Forceps", "price_range": "₹200-₹800", "description": "Toothed forceps for dense tissue handling" },
+					{ "name": "Russian Forceps", "price_range": "₹250-₹900", "description": "Broad-tipped tissue forceps" },
+					{ "name": "Bonney Forceps", "price_range": "₹400-₹1500", "description": "Heavy forceps for thick tissue" },
+					{ "name": "Tissue Forceps", "price_range": "₹150-₹700", "description": "Non-toothed fine handling forceps" }
+				]
+			}
+		}
+	},
+	"diagnostic_equipment": {
+		"name": "Diagnostic Equipment",
+		"description": "Modern diagnostic tools for accurate medical assessment",
+		"subcategories": {
+			"cardiovascular": {
+				"name": "Cardiovascular Diagnostics",
+				"products": [
+					{ "name": "Digital Stethoscopes", "price_range": "₹5000-₹25000", "description": "Electronic stethoscopes with amplification" },
+					{ "name": "ECG Machines", "price_range": "₹15000-₹150000", "description": "Electrocardiography machines" },
+					{ "name": "Blood Pressure Monitors", "price_range": "₹1000-₹8000", "description": "Digital and analog BP monitors" }
+				]
+			}
+		}
+	}
+}
+

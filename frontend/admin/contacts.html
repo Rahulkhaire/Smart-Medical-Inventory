@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Contact Messages | NATH Agency</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <div class="admin-wrapper">
+    <aside class="sidebar">
+      <h2>Admin Panel</h2>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="contacts.html" class="active">Messages</a></li>
+        <li><a href="#" id="logout-btn">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Contact Messages</h1>
+      </header>
+
+      <section class="messages-section">
+        <h3>All Messages</h3>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Subject</th>
+              <th>Message</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="messages-table-body">
+            <tr><td colspan="7">Loading messages...</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <div id="messages-status" class="dashboard-status"></div>
+    </main>
+  </div>
+
+  <!-- 📨 Popup Modal -->
+  <div id="message-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2 id="modal-name"></h2>
+      <p><strong>Email:</strong> <span id="modal-email"></span></p>
+      <p><strong>Phone:</strong> <span id="modal-phone"></span></p>
+      <p><strong>Subject:</strong> <span id="modal-subject"></span></p>
+      <hr>
+      <p id="modal-message" class="modal-message"></p>
+    </div>
+  </div>
+
+  <script src="js/admin-common.js"></script>
+  <script src="js/admin-contacts.js"></script>
+</body>
+</html>

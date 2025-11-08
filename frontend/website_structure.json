@@ -1,0 +1,83 @@
+{
+  "homepage": {
+    "name": "Home",
+    "description": "Welcome to NATH Agency - Your trusted partner for surgical and medical equipment",
+    "sections": [
+      "Hero Banner",
+      "Featured Products",
+      "Categories",
+      "Why Choose Us",
+      "Testimonials"
+    ]
+  },
+  "products": {
+    "name": "Products",
+    "description": "Browse our comprehensive catalog of medical equipment",
+    "sections": [
+      "Product Categories",
+      "Search & Filters",
+      "Featured Items",
+      "New Arrivals"
+    ]
+  },
+  "about": {
+    "name": "About Us",
+    "description": "Learn about NATH Agency's commitment to quality medical equipment",
+    "sections": [
+      "Company History",
+      "Mission & Vision",
+      "Team",
+      "Certifications"
+    ]
+  },
+  "services": {
+    "name": "Services",
+    "description": "Professional services for medical equipment",
+    "sections": [
+      "Installation",
+      "Maintenance",
+      "Training",
+      "Technical Support"
+    ]
+  },
+  "contact": {
+    "name": "Contact",
+    "description": "Get in touch with our medical equipment experts",
+    "sections": [
+      "Contact Form",
+      "Location",
+      "Phone Numbers",
+      "Email"
+    ]
+  },
+  "cart": {
+    "name": "Shopping Cart",
+    "description": "Review your selected medical equipment",
+    "sections": [
+      "Cart Items",
+      "Quantity Adjustment",
+      "Price Calculation",
+      "Checkout Button"
+    ]
+  },
+  "checkout": {
+    "name": "Checkout",
+    "description": "Complete your purchase securely",
+    "sections": [
+      "Billing Info",
+      "Shipping Address",
+      "Payment Method",
+      "Order Review"
+    ]
+  },
+  "account": {
+    "name": "My Account",
+    "description": "Manage your account and orders",
+    "sections": [
+      "Profile",
+      "Order History",
+      "Wishlist",
+      "Address Book"
+    ]
+  }
+}

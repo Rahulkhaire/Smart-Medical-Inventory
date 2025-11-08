@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NATH Agency - Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- Contact Page Enhancements --- */
+    .contact-form {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 2rem;
+      color: #fff;
+    }
+
+    .contact-form .form-control {
+      width: 100%;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      padding: 0.8rem;
+      border-radius: 8px;
+      outline: none;
+      margin-top: 0.3rem;
+    }
+
+    .contact-form .form-control:focus {
+      border-color: #4ba3ff;
+      box-shadow: 0 0 4px rgba(75, 163, 255, 0.3);
+    }
+
+    .contact-form label {
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .contact-form button {
+      margin-top: 1rem;
+    }
+
+    .form-success {
+      text-align: center;
+      padding: 1rem;
+      color: #4caf50;
+      font-weight: 600;
+    }
+
+    .form-error {
+      text-align: center;
+      padding: 1rem;
+      color: #ff5252;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a class="logo" href="index.html">
+          <img class="site-logo" src="logo1.png" alt="NATH Agency logo">
+          <div>
+            <h1>NATH AGENCY CSN</h1>
+            <p class="tagline">Your Trusted Partner for Medical Equipment</p>
+          </div>
+        </a>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a id="cart-btn" class="btn btn--outline" href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+          <a id="account-btn" class="btn btn--primary" href="account.html">Account</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="contact-page">
+      <div class="container">
+        <div class="page-header">
+          <h2>Contact Us</h2>
+          <p>Get in touch with our team for any inquiries</p>
+        </div>
+
+        <div class="contact-content">
+          <!-- ✅ Contact Form -->
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <select id="subject" class="form-control" required>
+                  <option value="">Select a subject</option>
+                  <option value="quote">Request Quote</option>
+                  <option value="support">Technical Support</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="partnership">Partnership</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" class="form-control" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+              <div id="form-response"></div>
+            </form>
+          </div>
+
+          <!-- ✅ Contact Information -->
+          <div class="contact-info">
+            <div class="contact-card">
+              <h3>Contact Information</h3>
+
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <h4>Address</h4>
+                  <p>Nath Agency - plot no.37, Vimal Appartment, Shaharoorwadi<br>Chh.Sambhajinagar - 431005, Maharashtra, India</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91-9075357337</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div>
+                  <h4>Email</h4>
+                  <p>info@nathagency.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">🕒</div>
+                <div>
+                  <h4>Business Hours</h4>
+                  <p>Mon-Sat: 9:00 AM - 6:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>NATH AGENCY CSN</h4>
+          <p>Your trusted partner for premium medical and surgical equipment.</p>
+          <div class="footer-contact">
+            <p>📞 +91-9075357337</p>
+            <p>✉️ info@nathagency.com</p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Product Categories</h4>
+          <ul id="footer-category-list">
+            <li><a href="products.html">Loading...</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul>
+            <li>Equipment Installation</li>
+            <li>Maintenance & Support</li>
+            <li>Training Programs</li>
+            <li>Technical Consultation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 NATH Agency. All rights reserved.</p>
+        <div class="footer-certifications">
+          <span>ISO 13485 Certified</span>
+          <span>FDA Approved Products</span>
+          <span>Secure Payments</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+
+  <!-- ✅ Contact Integration -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('contact-form');
+      const responseBox = document.getElementById('form-response');
+
+      if (!form) return;
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        responseBox.innerHTML = '';
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !phone || !subject || !message) {
+          responseBox.innerHTML = '<p class="form-error">⚠️ Please fill all fields.</p>';
+          return;
+        }
+
+        const payload = { name, email, phone, subject, message };
+
+        try {
+          const res = await fetch('http://localhost:8000/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+
+          const data = await res.json();
+
+          if (!res.ok) {
+            responseBox.innerHTML = `<p class="form-error">❌ ${data.msg || 'Failed to send message.'}</p>`;
+            return;
+          }
+
+          responseBox.innerHTML = '<p class="form-success">✅ Message sent successfully!</p>';
+          form.reset();
+        } catch (err) {
+          console.error('Error submitting form:', err);
+          responseBox.innerHTML = '<p class="form-error">⚠️ Network error. Please try again later.</p>';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

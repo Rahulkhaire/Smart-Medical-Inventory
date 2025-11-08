@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | NATH Agency</title>
+  <link rel="stylesheet" href="css/admin.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="admin-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2><i class="ri-admin-line"></i> NATH Admin</h2>
+      </div>
+      <ul class="sidebar-menu">
+        <li><a href="index.html" class="active"><i class="ri-dashboard-line"></i> Dashboard</a></li>
+        <li><a href="products.html"><i class="ri-box-3-line"></i> Products</a></li>
+        <li><a href="orders.html"><i class="ri-shopping-cart-2-line"></i> Orders</a></li>
+        <li><a href="contacts.html"><i class="ri-message-3-line"></i> Messages</a></li>
+        <li><a href="#" id="logout-btn"><i class="ri-logout-box-line"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="main-header">
+        <h1>Welcome, <span>Admin</span></h1>
+      </header>
+
+      <!-- Dashboard Cards -->
+      <section class="dashboard-overview">
+        <div class="card">
+          <i class="ri-box-3-line card-icon"></i>
+          <div>
+            <h3>Total Products</h3>
+            <p id="total-products">25</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="ri-shopping-cart-2-line card-icon"></i>
+          <div>
+            <h3>Total Orders</h3>
+            <p id="total-orders">15</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="ri-timer-2-line card-icon"></i>
+          <div>
+            <h3>Pending Orders</h3>
+            <p id="pending-orders">4</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="ri-mail-line card-icon"></i>
+          <div>
+            <h3>Messages</h3>
+            <p id="total-messages">8</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Order Graph -->
+      <section class="chart-section">
+        <h2>Orders Overview</h2>
+        <canvas id="ordersChart"></canvas>
+      </section>
+
+      <div id="dashboard-status" class="dashboard-status"></div>
+    </main>
+  </div>
+
+  <script>
+    // Chart.js: Orders Graph
+    const ctx = document.getElementById("ordersChart");
+    new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        datasets: [{
+          label: "Orders This Week",
+          data: [12, 19, 8, 15, 22, 17, 10],
+          borderColor: "#3b82f6",
+          backgroundColor: "rgba(59, 130, 246, 0.15)",
+          borderWidth: 3,
+          fill: true,
+          tension: 0.4,
+          pointRadius: 5,
+          pointBackgroundColor: "#3b82f6"
+        }]
+      },
+      options: {
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: true, grid: { color: "rgba(255,255,255,0.1)" }, ticks: { color: "#cbd5e1" } },
+          x: { grid: { color: "rgba(255,255,255,0.05)" }, ticks: { color: "#cbd5e1" } }
+        }
+      }
+    });
+  </script>
+
+  <script src="js/admin-common.js"></script>
+  <script src="js/admin-dashboard.js"></script>
+</body>
+</html>
